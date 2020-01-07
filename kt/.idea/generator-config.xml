@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PersistentConfig">
+    <option name="historyConfigList">
+      <map>
+        <entry key="blog">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="BlogDao" />
+              <option name="daoPackage" value="cn.kgc.dao" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="Blog" />
+              <option name="modelPackage" value="cn.kgc.entity" />
+              <option name="name" value="blog" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/zhoukao" />
+              <option name="tableName" value="blog" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="cn.kgc.dao" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="course">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="CourseDao" />
+              <option name="daoPackage" value="cn.kgc.dao" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="Course" />
+              <option name="modelPackage" value="cn.kgc.entity" />
+              <option name="name" value="course" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/java" />
+              <option name="tableName" value="course" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/java" />
+              <option name="xmlPackage" value="cn.kgc.dao" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="dept">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="DeptDao" />
+              <option name="daoPackage" value="cn.kgc.dao" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="Dept" />
+              <option name="modelPackage" value="cn.kgc.entity" />
+              <option name="name" value="dept" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="dept" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="cn.kgc.dao" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="edrelationship">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="EdrelationshipDao" />
+              <option name="daoPackage" value="cn.kgc.dao" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="Edrelationship" />
+              <option name="modelPackage" value="cn.kgc.entity" />
+              <option name="name" value="edrelationship" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="edrelationship" />
+              <option name="xmlMvnPath" value="src/main/java" />
+              <option name="xmlPackage" value="cn.kgc.dao" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="emp">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="EmpDao" />
+              <option name="daoPackage" value="cn.kgc.dao" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="Emp" />
+              <option name="modelPackage" value="cn.kgc.entity" />
+              <option name="name" value="emp" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="emp" />
+              <option name="xmlMvnPath" value="src/main/java" />
+              <option name="xmlPackage" value="cn.kgc.dao" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="login">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="LoginDao" />
+              <option name="daoPackage" value="cn.kgc.dao" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="Login" />
+              <option name="modelPackage" value="cn.kgc.entity" />
+              <option name="name" value="login" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="login" />
+              <option name="xmlMvnPath" value="src/main/java" />
+              <option name="xmlPackage" value="cn.kgc.dao" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="pcd">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="PcdDao" />
+              <option name="daoPackage" value="cn.kgc.dao" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="Pcd" />
+              <option name="modelPackage" value="cn.kgc.entity" />
+              <option name="name" value="pcd" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="pcd" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/java" />
+              <option name="xmlPackage" value="cn.kgc.dao" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="student">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="StudentDao" />
+              <option name="daoPackage" value="cn.kgc.dao" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="Student" />
+              <option name="modelPackage" value="cn.kgc.entity" />
+              <option name="name" value="student" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/java" />
+              <option name="tableName" value="student" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="cn.kgc.dao" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="users">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="UsersDao" />
+              <option name="daoPackage" value="cn.kgc.dao" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="Users" />
+              <option name="modelPackage" value="cn.kgc.entity" />
+              <option name="name" value="users" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/zhoukao" />
+              <option name="tableName" value="users" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="users">
+      <map>
+        <entry key="jdbc:mysql://localhost:3306/">
+          <value>
+            <User>
+              <option name="username" value="root" />
+            </User>
+          </value>
+        </entry>
+        <entry key="jdbc:mysql://localhost:3306/cinderella">
+          <value>
+            <User>
+              <option name="username" value="root" />
+            </User>
+          </value>
+        </entry>
+        <entry key="jdbc:mysql://localhost:3306/tcmp">
+          <value>
+            <User>
+              <option name="username" value="root" />
+            </User>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

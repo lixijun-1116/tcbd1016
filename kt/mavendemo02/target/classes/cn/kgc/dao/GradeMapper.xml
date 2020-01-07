@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.kgc.dao.GradeMapper">
+    <resultMap id="gradeMap" type="Grade">
+        <id property="id" column="id" ></id>
+        <result property="gradeName" column="grade_name"/>
+        <result property="createDate" column="create_date"/>
+        <collection property="list" ofType="Student">
+            <id property="id" column="s_id"></id>
+            <result property="gradeId" column="grade_id"/>
+            <result property="studentName" column="student_name"/>
+            <result property="studentNum" column="student_num"/>
+        </collection>
+    </resultMap>
+    <select id="queryGrade" resultMap="gradeMap">
+        SELECT grade.*,student.id s_id,student.student_name
+        FROM grade,student
+        WHERE student.grade_id=grade.id
+    </select>
+    <select id="queryByForeach_array" resultMap="gradeMap">
+        select * from grade
+        where id in
+        <foreach collection="array" open="(" close=")" separator="," item="id" >
+            #{id}
+        </foreach>
+    </select>
+    <select id="queryByForeach_list" resultMap="gradeMap">
+        select * from grade
+        where id in
+        <foreach collection="list" open="(" close=")" separator="," item="id" >
+            #{id}
+        </foreach>
+    </select>
+    <select id="queryByForeach_map" resultMap="gradeMap">
+        select * from grade
+        where id in
+        <foreach collection="list" open="(" close=")" separator="," item="id" >
+            #{id}
+        </foreach>
+    </select>
+    <select id="queryByGradeNameAndGradeId" resultMap="gradeMap">
+        select * from grade
+        where id in
+        <foreach collection="list" open="(" close=")" separator="," item="id" >
+            #{id}
+        </foreach>
+        and grade_name like concat ('%',#{gradeName},'%')
+    </select>
+</mapper>

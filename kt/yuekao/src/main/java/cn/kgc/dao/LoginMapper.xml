@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.kgc.dao.LoginMapper">
+    <resultMap id="LoginMap" type="Login">
+        <id property="id" column="id"></id>
+        <result property="account" column="account"></result>
+        <result property="password" column="password"></result>
+        <result property="eid" column="eid"></result>
+        <association property="emp" javaType="Emp" resultMap="EmpMap"></association>
+    </resultMap>
+    <resultMap id="EmpMap" type="Emp">
+        <id property="id" column="id"></id>
+        <result property="uuid" column="uuid"></result>
+        <result property="firstName" column="firstname"></result>
+        <result property="lastName" column="lastname"></result>
+        <result property="gender" column="gender"></result>
+        <result property="birthday" column="birthday"></result>
+        <result property="mobile" column="mobile"></result>
+        <result property="mail" column="mail"></result>
+        <result property="status" column="status"></result>
+        <result property="entryTime" column="entry_time"></result>
+        <result property="departureTime" column="departure_time"></result>
+        <result property="province" column="province"></result>
+        <result property="city" column="city"></result>
+        <result property="district" column="district"></result>
+        <result property="address" column="address"></result>
+        <result property="idNumber" column="idnumber"></result>
+    </resultMap>
+    <select id="selectByAccountOrMobileAndPassword" parameterType="Login" resultMap="LoginMap">
+       select * from login a,emp b where (a.account=#{account} or b.mobile=#{emp.mobile}) and   a.`password`=#{password} and a.eid=b.id
+    </select>
+    <select id="selectByAccountOrMobileAndPasswordRbac" parameterType="Login" resultMap="LoginMap">
+        select a.account,a.password,b.mobile,c.name from login a ,emp b, dept c,edrelationship d
+        where a.eid= b.id=d.eid and d.did=c.id and (a.account=#{account} or b.mobile=#{emp.mobile}) and a.password=#{password}
+    </select>
+
+</mapper>

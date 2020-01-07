@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/InvoicingSystem/InvoicingSystem.iml" filepath="$PROJECT_DIR$/InvoicingSystem/InvoicingSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/android.iml" filepath="$PROJECT_DIR$/android/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bootdemo/bootdemo.iml" filepath="$PROJECT_DIR$/bootdemo/bootdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bootdemo01/bootdemo01.iml" filepath="$PROJECT_DIR$/bootdemo01/bootdemo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/detai/detai.iml" filepath="$PROJECT_DIR$/detai/detai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dm-common/dm-common.iml" filepath="$PROJECT_DIR$/dm-common/dm-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dm-consumer/dm-consumer.iml" filepath="$PROJECT_DIR$/dm-consumer/dm-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dm-provider/dm-provider.iml" filepath="$PROJECT_DIR$/dm-provider/dm-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/freemarker/freemarker.iml" filepath="$PROJECT_DIR$/freemarker/freemarker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grade-consumer/grade-consumer.iml" filepath="$PROJECT_DIR$/grade-consumer/grade-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grade-provider/grade-provider.iml" filepath="$PROJECT_DIR$/grade-provider/grade-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/kt.iml" filepath="$PROJECT_DIR$/.idea/kt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mavendemo/mavendemo.iml" filepath="$PROJECT_DIR$/mavendemo/mavendemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mavendemo01/mavendemo01.iml" filepath="$PROJECT_DIR$/mavendemo01/mavendemo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mavendemo02/mavendemo02.iml" filepath="$PROJECT_DIR$/mavendemo02/mavendemo02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mavendemo03/mavendemo03.iml" filepath="$PROJECT_DIR$/mavendemo03/mavendemo03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mavendemo04/mavendemo04.iml" filepath="$PROJECT_DIR$/mavendemo04/mavendemo04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mavendemo05/mavendemo05.iml" filepath="$PROJECT_DIR$/mavendemo05/mavendemo05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mavendemo06/mavendemo06.iml" filepath="$PROJECT_DIR$/mavendemo06/mavendemo06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mavendemo07/mavendemo07.iml" filepath="$PROJECT_DIR$/mavendemo07/mavendemo07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvcdemo/mvcdemo.iml" filepath="$PROJECT_DIR$/mvcdemo/mvcdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvcdemo01/mvcdemo01.iml" filepath="$PROJECT_DIR$/mvcdemo01/mvcdemo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvcdemo02/mvcdemo02.iml" filepath="$PROJECT_DIR$/mvcdemo02/mvcdemo02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatisbootdemo/mybatisbootdemo.iml" filepath="$PROJECT_DIR$/mybatisbootdemo/mybatisbootdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/springboot.iml" filepath="$PROJECT_DIR$/springboot/springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot02/springboot02.iml" filepath="$PROJECT_DIR$/springboot02/springboot02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springdemo/springdemo.iml" filepath="$PROJECT_DIR$/springdemo/springdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springdemo01/springdemo01.iml" filepath="$PROJECT_DIR$/springdemo01/springdemo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvcdemo/springmvcdemo.iml" filepath="$PROJECT_DIR$/springmvcdemo/springmvcdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvcdemo01/springmvcdemo01.iml" filepath="$PROJECT_DIR$/springmvcdemo01/springmvcdemo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvcdemo02/springmvcdemo02.iml" filepath="$PROJECT_DIR$/springmvcdemo02/springmvcdemo02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmybatisdemo/springmybatisdemo.iml" filepath="$PROJECT_DIR$/springmybatisdemo/springmybatisdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmybatisdemo01/springmybatisdemo01.iml" filepath="$PROJECT_DIR$/springmybatisdemo01/springmybatisdemo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmybatishr/springmybatishr.iml" filepath="$PROJECT_DIR$/springmybatishr/springmybatishr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssmdemo/ssmdemo.iml" filepath="$PROJECT_DIR$/ssmdemo/ssmdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssmdemo01/ssmdemo01.iml" filepath="$PROJECT_DIR$/ssmdemo01/ssmdemo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yuekao/yuekao.iml" filepath="$PROJECT_DIR$/yuekao/yuekao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhoukao/zhoukao.iml" filepath="$PROJECT_DIR$/zhoukao/zhoukao.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.kgc.dao.UserMapper">
+
+    <resultMap id="UserMap" type="User">
+        <id property="id" column="id"></id>
+        <result property="userName" column="user_name"/>
+        <result property="nickName" column="nick_name"/>
+    </resultMap>
+
+    <!--修改-->
+    <update id="updateUserById" parameterType="User">
+        update t_user
+        <trim prefix="set" suffixOverrides="," suffix="where id=#{id}" >
+            <if test="userName != null and userName != ''">
+                user_name=#{userName},
+            </if>
+            <if test="password != null and password != ''">
+                password=#{password},
+            </if>
+            <if test="nickName != null and nickName != ''">
+                nick_name=#{nickName}
+            </if>
+        </trim>
+    </update>
+
+    <!--动态SQL-->
+    <select id="queryUserByUserNameAndNickName" parameterType="User" resultMap="UserMap">
+        select * from t_user where user_name like concat ('%',#{userName},'%')
+           <if test="nickName != null and nickName != ''">
+               and nick_name like concat('%',#{nickName},'%')
+           </if>
+    </select>
+
+    <!--动态SQL-->
+    <select id="queryUserByUserNameAndNickNameNew" parameterType="User" resultMap="UserMap">
+        select * from t_user
+         <where>
+             <if test="userName != null and userName != ''">
+                 and user_name like concat ('%',#{userName},'%')
+             </if>
+             <if test="nickName != null and nickName != ''">
+                 and nick_name like concat('%',#{nickName},'%')
+             </if>
+         </where>
+    </select>
+
+    <!--动态SQL-->
+    <select id="queryUserByUserNameAndNickNameTrim" parameterType="User" resultMap="UserMap">
+        select * from t_user
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="userName != null and userName != ''">
+                and user_name like concat ('%',#{userName},'%')
+            </if>
+            <if test="nickName != null and nickName != ''">
+                and nick_name like concat('%',#{nickName},'%')
+            </if>
+        </trim>
+    </select>
+
+    <!--查询User数量-->
+    <select id="queryCount" resultType="integer">
+        select count(*) from t_user
+    </select>
+
+    <!--查询全部User-->
+    <select id="queryAllUser" resultMap="UserMap">
+        select * from t_user
+    </select>
+
+    <!--添加用户-->
+    <insert id="insertUser" parameterType="User">
+        insert into t_user (user_name,password,nick_name) values (#{userName},#{password},#{nickName})
+    </insert>
+
+    <!--修改用户-->
+    <update id="updateUser" parameterType="User">
+        update t_user set user_name=#{userName},password=#{password},nick_name=#{nickName} where id=#{id}
+    </update>
+
+    <!--删除用户-->
+    <delete id="deleteUser" parameterType="integer">
+        delete from t_user where id=#{id}
+    </delete>
+
+    <!--用户的模糊查询-->
+    <select id="selectUserByUserName" parameterType="string" resultMap="UserMap">
+        select * from t_user where  user_name like concat ("%",#{userName},"%")
+    </select>
+
+    <!--用户的两个参数模糊查询(多参,注解)-->
+    <select id="selectUserByUserNameAndNickName"  resultMap="UserMap">
+        select * from t_user where  user_name like concat ("%",#{userName},"%") and nick_name like concat ("%",#{nickName},"%")
+    </select>
+
+    <!--用户的两个参数模糊查询(多参,对象)-->
+    <select id="selectUserByUser" parameterType="User" resultMap="UserMap">
+        select * from t_user where  user_name like concat ("%",#{userName},"%") and nick_name like concat ("%",#{nickName},"%")
+    </select>
+
+    <!--用户的两个参数模糊查询(多参,Map)-->
+    <select id="selectUserByMap" parameterType="map" resultMap="UserMap">
+        select * from t_user where  user_name like concat ("%",#{userName},"%") and nick_name like concat ("%",#{nickName},"%")
+    </select>
+
+
+
+</mapper>

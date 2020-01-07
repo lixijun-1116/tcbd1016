@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.kgc.dao.AnswersMapper">
+    <resultMap id="answersMap" type="Answers">
+        <id column="id" property="id"></id>
+    </resultMap>
+    <select id="queryAnswers" parameterType="integer" resultMap="answersMap">
+          SELECT `ansDate`,`ansContent` FROM `answers` WHERE `qid`=#{id}
+    </select>
+    <insert id="insert" parameterType="Answers">
+        INSERT INTO `answers` (`ansContent`,`ansDate`,`qid`) VALUES
+        (#{ansContent},NOW(),#{qid})
+    </insert>
+</mapper>

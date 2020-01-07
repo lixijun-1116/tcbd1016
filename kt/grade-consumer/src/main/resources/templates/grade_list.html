@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div align="center">
+        <table>
+            <tr>
+                <td>id</td>
+                <td>班级名称</td>
+                <td>创建日期</td>
+                <td>班级描述</td>
+                <td>操作</td>
+            </tr>
+
+            <tr th:each="grade:${grades}" align="center">
+                <td th:text="${grade.id}"></td>
+                <td th:text="${grade.gradeName}"></td>
+                <td th:text="${grade.createDate}"></td>
+                <td th:text="${grade.details}"></td>
+                <td><button id="btn" no="${grade.id}">详情</button></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

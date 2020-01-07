@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div align="center">
+        <h2>学 生 列 表</h2>
+        <table align="center" border="1px" cellpadding="0px" cellspacing="0px">
+            <tr align="center">
+                <td>学生id</td>
+                <td>学生姓名</td>
+                <td>学生年龄</td>
+                <td>学生性别</td>
+                <td>学号</td>
+                <td>操作</td>
+            </tr>
+            <tr th:each="student:${list}" align="center">
+                <td th:text="${student.id}"></td>
+                <td th:text="${student.studentName}"></td>
+                <td th:text="${student.age}"></td>
+                <td th:text="${student.gender}"></td>
+                <td th:text="${student.studentNum}"></td>
+                <td>
+                    <button>详情</button>
+                    <button>修改</button>
+                    <button>删除</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

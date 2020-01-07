@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.kgc.dao.StudentMapper">
+    <resultMap id="studentMap" type="Student">
+        <id property="id" column="s_id"></id>
+        <result property="gradeId" column="grade_id"/>
+        <result property="studentName" column="student_name"/>
+        <result property="studentNum" column="student_num"/>
+        <collection property="score" ofType="Score">
+            <id property="id" column="id" ></id>
+            <result property="studentId" column="student_id"/>
+            <result property="courseId" column="course_id"/>
+            <association property="course" javaType="Course">
+                <id property="id" column="id"></id>
+                <result property="courseName" column="course_name"/>
+            </association>
+        </collection>
+    </resultMap>
+    <update id="updateAgeAndGender" parameterType="Student">
+        update  student set gender=#{gender},age=#{age} where id=#{id}
+    </update>
+    <update id="updateAgeAndGenderByMap" parameterType="Map">
+        update  student set gender=#{gender},age=#{age} where id=#{id}
+    </update>
+    <select id="selectScore" resultMap="studentMap">
+        select score.score,student.student_name,student.id s_id,course.course_name from student,score,course where student.id=score.student_id and course.id=score.course_id
+    </select>
+</mapper>

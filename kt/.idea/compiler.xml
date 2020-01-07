@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zhoukao" />
+        <module name="mvcdemo02" />
+        <module name="demo" />
+        <module name="springboot02" />
+        <module name="springboot" />
+        <module name="ssmdemo01" />
+        <module name="freemarker" />
+        <module name="mvcdemo" />
+        <module name="springmvcdemo01" />
+        <module name="mavendemo06" />
+        <module name="mavendemo05" />
+        <module name="mavendemo04" />
+        <module name="mavendemo03" />
+        <module name="mavendemo02" />
+        <module name="mavendemo01" />
+        <module name="springmybatishr" />
+        <module name="springmybatisdemo01" />
+        <module name="bootdemo01" />
+        <module name="mvcdemo01" />
+        <module name="android" />
+        <module name="bootdemo" />
+        <module name="yuekao" />
+        <module name="dm-consumer" />
+        <module name="mybatisbootdemo" />
+        <module name="mavendemo07" />
+        <module name="springmybatisdemo" />
+        <module name="springdemo" />
+        <module name="dm-common" />
+        <module name="springmvcdemo" />
+        <module name="mavendemo" />
+        <module name="grade-consumer" />
+        <module name="ssmdemo" />
+        <module name="dm-provider" />
+        <module name="grade-provider" />
+        <module name="detai" />
+        <module name="springmvcdemo02" />
+        <module name="springdemo01" />
+        <module name="InvoicingSystem" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="android" target="1.8" />
+      <module name="bootdemo" target="1.8" />
+      <module name="bootdemo01" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="detai" target="1.8" />
+      <module name="dm-common" target="1.8" />
+      <module name="dm-consumer" target="1.8" />
+      <module name="dm-provider" target="1.8" />
+      <module name="freemarker" target="1.8" />
+      <module name="grade-consumer" target="1.8" />
+      <module name="grade-provider" target="1.8" />
+      <module name="InvoicingSystem" target="1.8" />
+      <module name="java" target="1.8" />
+      <module name="javaee" target="1.8" />
+      <module name="javaeeDay" target="1.8" />
+      <module name="mavendemo" target="1.8" />
+      <module name="mavendemo01" target="1.8" />
+      <module name="mavendemo02" target="1.8" />
+      <module name="mavendemo03" target="1.8" />
+      <module name="mavendemo04" target="1.8" />
+      <module name="mavendemo05" target="1.8" />
+      <module name="mavendemo06" target="1.8" />
+      <module name="mavendemo07" target="1.8" />
+      <module name="mvc" target="1.8" />
+      <module name="mvcdemo" target="1.8" />
+      <module name="mvcdemo01" target="1.8" />
+      <module name="mvcdemo02" target="1.8" />
+      <module name="mybatisbootdemo" target="1.8" />
+      <module name="springboot" target="1.8" />
+      <module name="springboot02" target="1.8" />
+      <module name="springdemo" target="1.8" />
+      <module name="springdemo01" target="1.8" />
+      <module name="springmvcdemo" target="1.8" />
+      <module name="springmvcdemo01" target="1.8" />
+      <module name="springmvcdemo02" target="1.8" />
+      <module name="springmybatisdemo" target="1.8" />
+      <module name="springmybatisdemo01" target="1.8" />
+      <module name="springmybatishr" target="1.8" />
+      <module name="ssmdemo" target="1.8" />
+      <module name="ssmdemo01" target="1.8" />
+      <module name="yuekao" target="1.8" />
+      <module name="zhoukao" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="android" options="-parameters" />
+      <module name="bootdemo" options="-parameters" />
+      <module name="bootdemo01" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="dm-consumer" options="-parameters" />
+      <module name="dm-provider" options="-parameters" />
+      <module name="freemarker" options="-parameters" />
+      <module name="grade-consumer" options="-parameters" />
+      <module name="grade-provider" options="-parameters" />
+      <module name="mybatisbootdemo" options="-parameters" />
+      <module name="springboot" options="-parameters" />
+      <module name="springboot02" options="-parameters" />
+    </option>
+  </component>
+</project>

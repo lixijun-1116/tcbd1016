@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.kgc.dao.MenuMapper">
+    <resultMap id="menuMap" type="Menu">
+        <id property="id" column="id"></id>
+        <result property="menuName" column="menu_name"/>
+        <result property="menuUrl" column="menu_url"/>
+        <result property="parentId" column="parent_id"/>
+    </resultMap>
+    <select id="queryAllMenuName" parameterType="Integer" resultMap="menuMap">
+        SELECT t.* FROM `tmenu` t,`role` r,`t_user` us, `role_user` ru,`role_menu` rm
+        WHERE
+            t.id=rm.menu_id
+            AND ru.role_id=rm.role_id
+            AND r.id=ru.role_id
+            AND us.id=ru.user_id
+            AND us.id=#{userId}
+            group by t.id
+    </select>
+
+
+</mapper>

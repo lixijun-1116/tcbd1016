@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+       <!-- <bean id="gradeDao" class="cn.kgc.dao.impl.GradeDaoImpl"></bean>
+        <bean id="gradeService" class="cn.kgc.service.impl.GradeServiceImpl">
+            <property name="gradeDao" ref="gradeDao"></property>
+        </bean>-->
+    <context:component-scan base-package="cn.kgc.dao,cn.kgc.service"></context:component-scan>
+    <bean id="grade" class="cn.kgc.entity.Grade" p:id="1" p:gradeName="大数据" p:createDate="2019-11-26"  p:details="描述"></bean>
+</beans>

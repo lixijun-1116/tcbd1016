@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" th:src="@{/js/jquery-2.1.4.min.js}"></script>
+    <script type="text/javascript">
+        $(function () {
+            //保存按钮的单击
+            $("input[type='button']").click(function () {
+               //表单序列化
+                var data=$("form").serialize();
+                //ajax请求
+                $.post('/save',data,function (result) {
+                    alert(result);
+                });
+            });
+        })
+    </script>
+</head>
+<body>
+    <div align="center">
+        <h3>新建用户</h3>
+        <form>
+            <p>
+                用户名：<input type="text" name="userName">
+            </p>
+            <p>
+                密码：<input type="password" name="password">
+            </p>
+            <p>
+                昵称：<input type="text" name="nickName">
+            </p>
+            <p>
+               <!-- <button></button>
+                <input type="submit">-->
+                <input type="button" value="保存"/>
+            </p>
+        </form>
+    </div>
+</body>
+</html>

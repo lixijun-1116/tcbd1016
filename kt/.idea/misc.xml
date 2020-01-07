@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/javaee" />
+    <file type="web" url="file://$PROJECT_DIR$/javaeeDay" />
+    <type id="Spring" />
+  </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/mavendemo/pom.xml" />
+        <option value="$PROJECT_DIR$/mavendemo01/pom.xml" />
+        <option value="$PROJECT_DIR$/mavendemo02/pom.xml" />
+        <option value="$PROJECT_DIR$/mavendemo03/pom.xml" />
+        <option value="$PROJECT_DIR$/mavendemo04/pom.xml" />
+        <option value="$PROJECT_DIR$/mavendemo05/pom.xml" />
+        <option value="$PROJECT_DIR$/mavendemo06/pom.xml" />
+        <option value="$PROJECT_DIR$/zhoukao/pom.xml" />
+        <option value="$PROJECT_DIR$/mavendemo07/pom.xml" />
+        <option value="$PROJECT_DIR$/yuekao/pom.xml" />
+        <option value="$PROJECT_DIR$/springdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/springdemo01/pom.xml" />
+        <option value="$PROJECT_DIR$/springmybatisdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/springmybatisdemo01/pom.xml" />
+        <option value="$PROJECT_DIR$/springmybatishr/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvcdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvcdemo01/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvcdemo02/pom.xml" />
+        <option value="$PROJECT_DIR$/mvcdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/mvcdemo01/pom.xml" />
+        <option value="$PROJECT_DIR$/mvcdemo02/pom.xml" />
+        <option value="$PROJECT_DIR$/ssmdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/ssmdemo01/pom.xml" />
+        <option value="$PROJECT_DIR$/InvoicingSystem/pom.xml" />
+        <option value="$PROJECT_DIR$/detai/pom.xml" />
+        <option value="$PROJECT_DIR$/bootdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/bootdemo01/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatisbootdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot02/pom.xml" />
+        <option value="$PROJECT_DIR$/freemark/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/android/pom.xml" />
+        <option value="$PROJECT_DIR$/dm-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/dm-common/pom.xml" />
+        <option value="$PROJECT_DIR$/dm-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/grade-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/grade-consumer/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_12" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

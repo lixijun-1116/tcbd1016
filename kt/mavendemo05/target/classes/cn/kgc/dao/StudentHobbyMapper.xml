@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.kgc.dao.StudentHobbyMapper">
+    <resultMap id="studentHobbyMap" type="StudentHobby">
+        <id property="id" column="id"></id>
+        <result property="hobbyId" column="hobby_id"/>
+        <result property="studentId" column="student_id"/>
+        <collection property="list" ofType="Hobby">
+            <id property="id" column="id"></id>
+            <result property="hobbyName" column="hobby_name"/>
+            <result property="createTime" column="create_time"/>
+        </collection>
+    </resultMap>
+    <select id="selectHobby" resultMap="studentHobbyMap">
+        select student_id,hobby_name from student_hobby, hobby where hobby_id=hobby.id
+    </select>
+</mapper>

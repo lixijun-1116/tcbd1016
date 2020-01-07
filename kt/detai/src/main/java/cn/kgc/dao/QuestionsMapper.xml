@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.kgc.dao.QuestionsMapper">
+    <resultMap id="questionsMap" type="Questions">
+        <id property="id" column="id"></id>
+    </resultMap>
+    <select id="queryAll" resultMap="questionsMap">
+        select * from questions
+    </select>
+    <insert id="insert" parameterType="Questions">
+        INSERT INTO `questions` (`title`,`detailDesc`,`answerCount`,`lastModified`) VALUES
+        (#{title},#{detailDesc},0,NOW())
+    </insert>
+    <select id="queryById" parameterType="integer" resultType="Questions">
+        select * from questions where id = #{id}
+    </select>
+
+    <update id="update" parameterType="integer">
+        UPDATE `questions` SET `answerCount` = ${answerCount} WHERE `id` = ${id}
+    </update>
+
+</mapper>

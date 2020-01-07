@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.kgc.dao.InformationsMapper">
+    <resultMap id="informationsMap" type="Informations">
+        <id column="i_id" property="id"></id>
+        <result property="content" column="i_content"/>
+        <result property="title" column="title"/>
+        <result property="viewCount" column="viewCount"/>
+        <result property="reportTime" column="reportTime"/>
+        <result property="lastPostTime" column="lastPostTime"/>
+        <result property="replyCount" column="replyCount"/>
+        <collection property="repliesList" ofType="Replies">
+            <id column="id" property="id"></id>
+            <result property="content" column="r_content"/>
+            <result property="replyTime" column="replyTime"/>
+            <result property="infoId" column="infoId"/>
+        </collection>
+    </resultMap>
+    <select id="selectAll" resultType="Informations">
+        select * from informations
+    </select>
+
+    <select id="selectById" resultMap="informationsMap">
+        select i.id i_id,i.viewCount,i.replyCount, i.title,i.reportTime ,i.content i_content,r.replyTime,r.content r_content from informations i ,replies r where i.id=r.infoId and i.id=#{id} ORDER BY r.replyTime desc
+    </select>
+
+    <update id="updateViewCount" parameterType="integer">
+        update informations set viewCount=#{viewCount} where id=#{id}
+    </update>
+    <update id="updateReplyCount" parameterType="integer">
+        update informations set replyCount=#{replyCount},lastPostTime=Now() where id=#{id}
+    </update>
+</mapper>
